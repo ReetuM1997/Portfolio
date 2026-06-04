@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 
@@ -8,12 +9,11 @@ const HeroSection = () => {
 
       <div className="max-w-7xl mx-auto px-6 pt-32">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          
           {/* Left Section */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-900/40 border border-purple-500/30 text-sm mb-8">
               <span className="w-2 h-2 rounded-full bg-green-400"></span>
-            Currently @ GTPL · Supporting Moneyverse.ai
+              Currently @ GTPL · Supporting Moneyverse.ai
             </div>
 
             <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
@@ -28,7 +28,7 @@ const HeroSection = () => {
             </h2>
 
             <p className="mt-8 text-lg text-gray-300 leading-relaxed max-w-xl">
-              Software Engineer with 2.5+ years of experience building scalable
+              Software Engineer with 2.7+ years of experience building scalable
               fintech, GRC, ERPNext, and full stack applications using React.js,
               TypeScript, JavaScript, Python, Docker, Kafka, and GCP.
             </p>
@@ -62,21 +62,19 @@ const HeroSection = () => {
 
           {/* Right Section */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md p-5 rounded-[30px] border border-white/10 bg-[#071633]/70 backdrop-blur-md shadow-2xl">
-              
+            <div
+              className="w-full max-w-md p-5 rounded-[30px] border border-white/10 backdrop-blur-md shadow-2xl bg-cover bg-center"
+              style={{
+                backgroundImage: "url('../assets/my-image.jpeg')",
+              }}
+            >
               {/* Profile Card */}
               <div className="rounded-[24px] bg-gradient-to-b from-purple-900 to-blue-900 p-8 flex flex-col items-center">
                 <div className="w-24 h-24 rounded-full border border-white/20 bg-white/10 flex items-center justify-center text-4xl font-bold">
                   RM
                 </div>
 
-                <h3 className="text-3xl font-bold mt-6">
-                  Reetu M Tambre
-                </h3>
-
-                <p className="text-gray-300 mt-2">
-                  Software Engineer
-                </p>
+                <p className="text-gray-300 mt-2">Software Engineer</p>
 
                 <div className="flex flex-wrap justify-center gap-2 mt-6">
                   {["React.js", "TypeScript", "Python", "Full Stack"].map(
@@ -87,7 +85,7 @@ const HeroSection = () => {
                       >
                         {skill}
                       </span>
-                    )
+                    ),
                   )}
                 </div>
               </div>
@@ -95,36 +93,22 @@ const HeroSection = () => {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-3 mt-4">
                 <div className="rounded-2xl border border-white/10 bg-[#071633] p-5 text-center">
-                  <h4 className="text-3xl font-bold text-blue-400">
-                    2.5+
-                  </h4>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Years
-                  </p>
+                  <h4 className="text-3xl font-bold text-blue-400">2.7+</h4>
+                  <p className="text-gray-400 text-sm mt-1">Years</p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-[#071633] p-5 text-center">
-                  <h4 className="text-3xl font-bold text-blue-400">
-                    6+
-                  </h4>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Projects
-                  </p>
+                  <h4 className="text-3xl font-bold text-blue-400">6+</h4>
+                  <p className="text-gray-400 text-sm mt-1">Projects</p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-[#071633] p-5 text-center">
-                  <h4 className="text-3xl font-bold text-blue-400">
-                    Prod
-                  </h4>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Deployments
-                  </p>
+                  <h4 className="text-3xl font-bold text-blue-400">Prod</h4>
+                  <p className="text-gray-400 text-sm mt-1">Deployments</p>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
     </div>
