@@ -46,8 +46,11 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="text-white py-16 md:py-20 px-4 md:px-0">
-      <div className="w-full h-[1px] bg-white/10 mb-10"></div>
+    <section
+      id="about"
+      className="py-4 px-6 min-h-screen bg-gradient-to-r from-[#2d0b52] via-[#05082b] to-[#001d46] text-white"
+    >
+      <div className="w-full h-[1px] bg-white/10 mb-4"></div>
 
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
@@ -190,7 +193,7 @@ const Experience = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto mt-16 px-4 md:px-6"
+        className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto mt-8 px-4 md:px-6"
       >
         {[
           { value: "2.7+", label: "Years Experience" },
